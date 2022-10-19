@@ -2,7 +2,7 @@ class rectangle():
     def __init__(length, breadth):
         self.length = length
         self.breadth = breadth
-    def areaCal():
+    def areaCal(self):
         self.area = self.lenght*self.breadth
     
 a = float(input("Enter Length of Rectangle :"))
