@@ -1,9 +1,10 @@
 class rectangle():
-    def __init__(length, breadth):
+    def __init__(self,length, breadth):
         self.length = length
         self.breadth = breadth
     def areaCal(self):
-        self.area = self.lenght*self.breadth
+        return self.length*self.breadth
+        
     
 a = float(input("Enter Length of Rectangle :"))
 b = float(input("Enter Breadth of Rectangle :"))
