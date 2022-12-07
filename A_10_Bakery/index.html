@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Baker's Cart</title>
+</head>
+
+<body>
+    <center>
+        <h1>Welcome to Baker's Cart! What would you like to buy from us today?</h1>
+    </center>
+    <hr><br>
+    <form>
+        <ol>
+            <li>
+                <h3>Cake Rs. 50</h3>
+                <input type="button" onclick="addCake()" value="Add Item">
+            </li>
+            <li>
+                <h3>Bread Rs. 35</h3>
+                <input type="button" onclick="addBread()" value="Add Item">
+            </li>
+            <li>
+                <h3>Cookies Rs. 100</h3>
+                <input type="button" onclick="addCookies()" value="Add Item">
+            </li>
+            <li>
+                <h3>Bun Rs. 15</h3>
+                <input type="button" onclick="addBun()" value="Add Item">
+            </li>
+            <li>
+                <h3>Chips Rs. 10</h3>
+                <input type="button" onclick="addChips()" value="Add Item">
+            </li>
+        </ol>
+    </form>
+    <hr>
+    <h3 id="total">Total Payable Amount :0</h3>
+    <form>
+        <input type="button" onclick="removeAll()" value="Remove all Items">
+        <input type="button" onclick="checkout()" value="Checkout">
+    </form>
+</body>
+<script src="./index.js " type="text/javascript "></script>
+
+</html>
