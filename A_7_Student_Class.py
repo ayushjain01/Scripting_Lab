@@ -1,3 +1,10 @@
+"""Create a Python class called ‘Student’ having ‘name’, ‘age’ as attribute along with a list having the marks obtained for three subjects.
+    - Create a constructor to initialize two objects of this class.
+    - Create a member function called ‘display’ printing the details of a specific object
+    - Ask user to enter the values for an object through an ‘accept’ member function.
+    - Display these details.
+"""
+
 #Create Student Class
 class Student():
     def __init__(self):

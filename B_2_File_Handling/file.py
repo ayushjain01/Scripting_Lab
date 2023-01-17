@@ -1,8 +1,13 @@
+"""Write a python program to read the contents of a file (filename as argument) and store the number of occurrences of each word in a dictionary. 
+Display the top 10 words with most number of occurrences in descending order. 
+Store the length of each of these words in a list and display the list. 
+Write a one-line reducefunction to get the average length and one-line list comprehension to display squares of all odd numbers and display both."""
+
 from functools import reduce
 import os
 import sys
 #read contents of a file and store number of occurrences of each word in a dictionary
-myfile = open(os.path.join(sys.path[0], "myfile.txt"),"r") #read mode
+myfile = open(os.path.join(sys.path[0], "content.txt"),"r") #read mode
 occurrences = {}
 content = myfile.read()
 content = content.split(" ")
@@ -20,9 +25,10 @@ top10.reverse()
 top10 = top10[0:10] #top 10 words
 length = []
 print("Top 10 words from the text are :")
-print("Word\t Occurrences")
+print("Word\t\t Occurrences")
 for i in top10:
-    print(f"{i[0]}\t\t{i[1]}")
+    padString = i[0].ljust(16," ") #adds padding to the string for better formatting
+    print(f"{padString} {i[1]}")
     length.append(len(i[0])) #store length of each word
 print(f"Length List : {length}")
 

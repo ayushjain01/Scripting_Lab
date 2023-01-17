@@ -1,3 +1,8 @@
+"""Write a temperature converter python program, which is menu driven. Each such conversion logic should be defined in separate functions. 
+The program should call the respective function based on the user’s requirement. 
+The program should run as long as the user wishes so. Provide an option to view the conversions stored as list of tuples with attributes - from unit value, 
+to unit value sorted by the user’s choice (from-value or to-value)."""
+
 #Functions to Convert Temperature
 
 def CtoK(degCel):
@@ -59,7 +64,7 @@ Enter
         newTemp = KtoC(oldTemp)
         conversions.append((oldTemp,newTemp))
         print(f"{oldTemp} K = {newTemp} C")
-    elif ch == 7:
+    elif ch == 7:  #this part is useless, but this is what ma'am wanted
         print(
             """
             Enter

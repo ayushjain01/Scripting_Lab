@@ -1,9 +1,12 @@
+"""Write a python program to create a class ‘Rectangle’. This class should include a constructor to initialize the dimensions. 
+Include a function in the class to compute the area of the rectangle. Create objects of the class and print area."""
+
 class rectangle():
     #Class should include a constructor
     def __init__(self,length, breadth):
         self.length = length
         self.breadth = breadth
-    #Include funtion to calculate area
+    #Include function to calculate area
     def areaCal(self):
         return self.length*self.breadth
         

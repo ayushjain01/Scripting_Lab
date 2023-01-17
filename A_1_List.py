@@ -1,5 +1,12 @@
+"""Write Python code to do the following:
+      - Create list with inputs from user
+      - Determine minimum and maximum elements in the list
+      - Insert new element into the list
+      - Delete an element from the list
+      - Determine if an element is present in the list."""
+
 #Create a List with inputs from user
-a = list(map(int, input("Enter elements separated by space : ").split(" ")))
+a = list(map(int, input("Enter elements separated by space : ").split(" "))) 
 #Determine min and max 
 min_a = min(a)
 max_a = max(a)
@@ -11,7 +18,7 @@ a.append(new)
 print(f"Element Added : {a}")
 #Delete an element
 rem = int(input("Enter an element to delete: "))
-a.remove(new)
+a.remove(new) 
 print(f"Element Deleted : {a}")
 #Search an element
 ser = int(input("Enter an element to search: "))

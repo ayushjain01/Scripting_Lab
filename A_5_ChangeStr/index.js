@@ -1,7 +1,7 @@
 function changeString() {
     var temp = "";
     var ans = "";
-    let asc = 0;
+    var asc = 0;
     const vowels = ["a", "e", "i", "o", "u"];
     var original = document.getElementById("strinput").value;
     original.toLowerCase()
@@ -12,7 +12,6 @@ function changeString() {
             asc = "a".charCodeAt(0)
         }
         temp = temp + String.fromCharCode(asc);
-
     }
     //capitalize vowels in new string
     for (let i = 0; i < temp.length; i++) {
